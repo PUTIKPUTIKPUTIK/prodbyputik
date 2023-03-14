@@ -1,0 +1,22 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		@await Html.PartialAsync("MetatagsPartial")
+		@await Html.PartialAsync("CssPartial")
+	</head>
+	<body class="is-preload">
+		@await Html.PartialAsync("HeaderPartial")
+
+		<section id="one" class="main style1">
+			<div class="container">
+				<div class="row gtr-150">
+					@RenderBody()
+				</div>
+			</div>
+		</section>
+
+		@await Html.PartialAsync("FooterPartial")
+		@await Html.PartialAsync("ScriptsPartial")
+
+	</body>
+</html>
