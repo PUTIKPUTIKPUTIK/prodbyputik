@@ -1,8 +1,11 @@
+using prodbyputik.Service;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews()
     .AddSessionStateTempDataProvider();
+builder.Configuration.Bind("Project", new Config());
 
 var app = builder.Build();
 
