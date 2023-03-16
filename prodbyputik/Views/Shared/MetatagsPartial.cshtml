@@ -1,10 +1,11 @@
-﻿@if(ViewBag.Title != null)
+﻿@using prodbyputik.Service
+@if(ViewBag.Title != null)
 {
     <title>@ViewBag.Title</title>
 }
 else
 {
-    <title>Putik</title>
+    <title>@Config.ProjectName</title>
 }
 <title>Photon by HTML5 UP</title>
 <meta charset="utf-8" />
